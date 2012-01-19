@@ -1,0 +1,451 @@
+/*   
+Theme Name: TCM Theme
+Theme URI: http://digwp.com
+Description: Traditional Chinese Medicine Theme
+Author: Todd Hulin
+Author URI: http://woodenteeth.com
+Version: 1
+*/
+
+@media screen {
+
+html, body, p, h1, h2, h3, h4, h5, h6 { 
+	margin: 0; 
+	padding: 0; 
+	vertical-align: baseline;
+	line-height: 1.5em;
+}
+
+body, * {
+	font: 12px Verdana, "Lucida Grande", Lucida, sans-serif;
+}
+
+body {
+	background: #790f24 url(images/tcm_bg.jpg); 
+}
+
+body.dw {
+	background-color: #0d214a;
+	background-image: url(images/tcm_dw_bg.jpg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	margin-top: 13px;
+}
+
+p {
+	margin-bottom: 12px;
+}
+
+strong {
+	font-weight: bold;
+}
+a img { 
+	border: none; 
+}
+
+#wrapper { 
+	margin: 28px auto 0; 
+	width: 900px;
+}
+
+#header, #content {
+	background-color: #ffffef;
+	overflow: hidden; 
+}
+
+/* -------------- TOP NAV -------------- */
+#topNav {
+	display: block;
+	height: 40px;
+	width: 100%;
+	font-size: 13px;
+	color: #ffffef;
+}
+
+#topNav #links {
+	float: left;
+	margin-top: 7px;
+	margin-left: 21px;
+}
+
+#topNav #links a {
+	color: #ffffef;
+	text-decoration: none;
+}
+
+#topNav #links a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+#topNav #social-youtube {
+	float: right;
+}
+
+#topNav #social-facebook {
+	float: right;
+	margin-left: 8px;
+}
+
+/* -------------- HEADER -------------- */
+#header {
+	width: 862px;
+	padding-right: 17px;
+	padding-left: 17px;
+	border-right: 2px solid #330000;
+	border-left: 2px solid #330000;
+	border-top: 2px solid #330000;
+	-moz-box-shadow: 5px 0px 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 5px 0px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 0px 5px rgba(0,0,0,0.3);
+}
+
+#header #siteLogo {
+	float: left;	
+}
+
+#header #search {
+	float: right;
+	clear: right;
+	margin-top: 51px;
+}
+
+#header #menu {
+	width: 862px;
+	height: 30px;
+	/*padding-top: 7px;*/
+	display: inline-block;
+	margin-bottom: 7px;
+}
+
+#header #menu ul {
+	margin: 0 0 0 -2px;
+	padding: 0;
+	display: table;
+	border-spacing: 2px 0px;
+	/*white-space: nowrap;*/
+	width: 866px;
+}
+#header #menu li {
+	list-style-type: none;
+	background-color: #fdf4c5;
+	border: 1px solid black;
+	height: 27px;
+	display: table-cell;
+	overflow: hidden;
+}
+
+#header #menu li a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	padding: 6px 4px 7px 2px;
+	width: 100%;
+	display: table;
+}
+
+#header #menu li a:hover {
+	color: white;
+	background-color: #ca0813;
+}
+
+#header #menu .active a{
+	color: white;
+	background-color: #ca0813;	
+}
+
+.dw #header #menu li a:hover {
+	color: white;
+	background-color: #1961a9;
+}
+
+.dw #header #menu .active a{
+	color: white;
+	background-color: #1961a9;	
+}
+
+#header #search #searchsubmit {
+	background-color: #fefbbd;
+	border: 1px solid black;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#header #breadcrumb {
+	color: #7f7e7e;
+	float: left;
+	padding-bottom: 3px;
+	margin-left: 12px;
+}
+
+#header #breadcrumb a {
+	color: #7f7e7e;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+#header #breadcrumb a:hover {
+	text-decoration: underline;
+}
+
+#header #pageTools {
+	color: #7f7e7e;
+	float: right;
+	padding-right: 7px;
+}
+
+#header #pageTools a {
+	color: #7f7e7e;	
+	text-decoration: none;
+}
+
+#header #pageTools a:hover {
+	text-decoration: underline;	
+}
+
+#header hr {
+	display: inline-block;
+  	height: 0;
+  	border-bottom: 1px solid #999999;
+	width: 100%;
+	border-top-style: hidden;
+}
+/* -------------- CONTENT -------------- */
+#content {
+	width: 862px;
+	border-right: 2px solid #330000;
+	border-left: 2px solid #330000;
+	border-bottom: 2px solid #330000;
+	float: left;
+	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+	padding: 7px 17px 23px;
+}
+
+#content ul {
+	padding-left: 11px;
+	list-style-type: none;
+}
+
+#content ul li:before {
+	color: #7e0102;
+	content: "\03E \020";
+}
+
+#content #primary-widget-area {
+	float: left;
+	padding-top: 23px;
+	width: 201px;
+}
+
+#content #primary-widget-area #subnav .title {
+	color: #cc0000;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: 24px;
+	float: left;
+	width: 175px;
+	margin-bottom: 3px;
+}
+.dw #content #primary-widget-area #subnav .title {
+	color: #1460a5;
+}
+
+#content #primary-widget-area #subnav ul {
+	list-style-type: none;
+	margin-top: 3px;
+}
+
+#content #primary-widget-area #subnav ul li:before {
+	color: black;
+	content: "\03E \020";
+}
+
+#content #primary-widget-area #subnav ul li.active:before {
+	color: #cc0000;
+}
+
+#content #primary-widget-area #subnav li.active a{
+	color: #cc0000;
+}
+
+.dw #content #primary-widget-area #subnav ul li.active:before {
+	color: #1460a5;
+}
+
+.dw #content #primary-widget-area #subnav li.active a{
+	color: #1460a5;
+}
+
+#content #primary-widget-area #subnav a {
+	text-decoration: none;
+	line-height: 1.5em;
+}
+
+#content #primary-widget-area #subnav a:hover {
+	text-decoration: underline;
+}
+
+.dw #content #primary-widget-area #subnav a:hover {
+	color: #1460a5;
+	text-decoration: underline;
+}
+
+#content #primary-widget-area img {
+	margin-left: 2px;
+}
+
+#content a {
+	color: black;
+	text-decoration: underline;
+}
+
+#content a:hover {
+	color:#ca0813;	
+}
+
+#content .content img {
+	border: 1px solid black;
+	margin: 10px;
+}
+
+/* -------------- FOOTER -------------- */
+#footer {
+	display: block;
+	height: 70px;
+	width: 100%;
+	font-size: 13px;
+	color: #ffffef;
+	text-align: center;
+	padding-top: 13px;
+	float: left;
+}
+
+/* -------------- PAGE: HOME -------------- */
+
+#home #content {
+	padding-top: 0;
+}
+#home #content a {
+	color: #7e0102;
+}
+
+#home #content a:hover {
+	color: black;
+}
+
+#home h1 {
+	font-size: 18px;
+}
+
+#home #header #slider {
+	position: relative;
+	width: 862px;
+	height: 326px;
+	display: inline-block;
+	margin-bottom: 7px;
+}
+
+#home #header #slider .sliderShadow {
+	position: absolute;
+	right: 0;
+}
+
+#home #content #homepageSubFeatures {
+	background: url(images/homepage_subFeature_bg.png) repeat-y;
+	width: 862px;
+	display: inline-block;
+}
+
+#home #content .subFeature {
+	width: 276px;
+	float: left;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 10px;
+}
+
+#home #content .subFeature .image {
+	position: relative;
+	display: block;
+	width: 276px;
+	height: 172px;
+}
+
+#home #content .subFeature .image .featureShadow {
+	position: absolute;
+	right: 0;
+}
+
+#home #content .lastSubFeature {
+	padding-right: 0px;
+	border-right: 0px;	
+}
+
+#home #content .subFeature:first-child {
+	padding-left: 0px;
+	width: 278px;
+}
+
+#home #content .subFeature h1,#home #content .subFeature p {
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+/* -------------- PAGE: T2 -------------- */
+#t2 h1 {
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 6px;
+	color: #cc0000;
+}
+
+#t2.dw h1 {
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 6px;
+	color: #1460a5;
+}
+
+#t2 #content {
+}
+
+
+#t2 #content .content {
+	float: right;
+	width: 610px;
+	margin-right: 35px;
+}
+
+} /* END screen media */
+
+@media print {
+
+.do-not-print { display: none; }
+#comments { page-break-before: always; }
+
+body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: Garamond,"Times New Roman", serif; color: #000; background: none; font-size: 12pt; }
+h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif; }
+h1 { font-size: 19pt; }
+h2 { font-size:17pt; }
+h3 { font-size:15pt; }
+h4,h5,h6 { font-size:12pt; }
+code { font: 10pt Courier, monospace; } 
+blockquote { margin: 1.3em; padding: 1em; }
+img { display: block; margin: 1em 0; }
+a img { border: none; }
+table { margin: 1px; text-align:left; }
+th { border-bottom: 1px solid #333;  font-weight: bold; }
+td { border-bottom: 1px solid #333; }
+th, td { padding: 4px 10px 4px 0; }
+caption { background: #fff; margin-bottom: 2em; text-align: left; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; } 
+a { text-decoration: none; color: black; }
+	
+} /* END print media */
