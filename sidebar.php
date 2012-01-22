@@ -4,7 +4,7 @@
     
         <!-- All this stuff in here only shows up if you DON'T have any widgets active in this zone -->
   
-    	<?php wp_list_pages('title_li=<h2>Pages</h2>' ); ?>
+		<!--<?php wp_list_pages('title_li=<h2>Pages</h2>' ); ?>
     
     	<h2>Archives</h2>
     	<ul>
@@ -30,7 +30,7 @@
     	<ul>
     		<li><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a></li>
     		<li><a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a></li>
-    	</ul>
+    	</ul>-->
 	
 	<?php endif; ?>
 
