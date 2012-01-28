@@ -1,3 +1,5 @@
+/* @override http://tcm.local/wp-content/themes/TCM/style.css */
+
 /*   
 Theme Name: TCM Theme
 Theme URI: http://digwp.com
@@ -56,6 +58,14 @@ a img {
 	overflow: hidden; 
 }
 
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
 /* -------------- TOP NAV -------------- */
 #topNav {
 	display: block;
@@ -63,20 +73,38 @@ a img {
 	width: 100%;
 	font-size: 13px;
 	color: #ffffef;
+	list-style-type: none;
 }
 
-#topNav #links {
-	float: left;
+#topNav ul {
+	padding-left: 13px;
+}
+
+#topNav ul li {
 	margin-top: 7px;
-	margin-left: 21px;
+	margin-left: 7px;
+	list-style-type: none;
+	float: left;
+	border-left: 1px solid white;
 }
 
-#topNav #links a {
+#topNav ul li:first-child {
+	border-left: none;
+	margin-left: 0;
+}
+/*#topNav ul li:nth-child(-n+4):after {
+	color: #ffffef;
+	content: "\07C";
+}*/
+
+#topNav ul li a {
 	color: #ffffef;
 	text-decoration: none;
+	margin-right: 2px;
+	margin-left: 6px;
 }
 
-#topNav #links a:hover {
+#topNav ul li a:hover {
 	text-decoration: underline;
 	color: white;
 }
@@ -300,6 +328,17 @@ a img {
 	margin-left: 2px;
 }
 
+#content .content {
+	float: right;
+	width: 610px;
+	margin-right: 35px;
+}
+
+#content .content img {
+	border: 1px solid black;
+	margin: 10px;
+}
+
 #content a {
 	color: black;
 	text-decoration: underline;
@@ -307,11 +346,6 @@ a img {
 
 #content a:hover {
 	color:#ca0813;	
-}
-
-#content .content img {
-	border: 1px solid black;
-	margin: 10px;
 }
 
 /* -------------- FOOTER -------------- */
@@ -398,33 +432,23 @@ a img {
 }
 
 /* -------------- PAGE: T2 -------------- */
-#t2 h1 {
+.page #content h1 {
 	font-size: 24px;
 	margin-top: 0;
 	margin-bottom: 6px;
 	color: #cc0000;
 }
 
-#t2.dw h1 {
+.page .dw h1 {
 	font-size: 24px;
 	margin-top: 0;
 	margin-bottom: 6px;
 	color: #1460a5;
 }
 
-#t2 #content {
-}
-
-
-#content .content {
-	float: right;
-	width: 610px;
-	margin-right: 35px;
-}
-
 } /* END screen media */
 
-@media print {
+/*@media print {
 
 .do-not-print { display: none; }
 #comments { page-break-before: always; }
@@ -446,6 +470,6 @@ th, td { padding: 4px 10px 4px 0; }
 caption { background: #fff; margin-bottom: 2em; text-align: left; }
 thead { display: table-header-group; }
 tr { page-break-inside: avoid; } 
-a { text-decoration: none; color: black; }
+a { text-decoration: none; color: black; }*/
 	
 } /* END print media */

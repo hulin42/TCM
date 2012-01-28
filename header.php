@@ -44,8 +44,7 @@
 	
 	<div id="wrapper">
 		<div id="topNav">
-			<div id="links"><a href="#">TCM World</a> &nbsp;|&nbsp; <a href="#">The Dragon's Way</a> &nbsp;|&nbsp; <a href="#">breastcancer.com</a> &nbsp;|&nbsp; <a href="#">tcmconference.org</a> &nbsp;|&nbsp; <a href="#">TCM World Newsletter Sign-up</a>
-			</div>
+			<?php wp_nav_menu(array('menu' => 'TCM Top Nav')); ?>
 			<div id="social-facebook"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/social_facebook.png" alt="social_facebook" width="31" height="31" /></a></div>
 			<div id="social-youtube"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/social_youTube.png" alt="social_youTube" width="31" height="31" /></a></div>
 		</div>
