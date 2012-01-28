@@ -9,12 +9,7 @@
 ?>
 
 <?php if (is_active_sidebar($post_name . '-left-rail')) : ?>
-
-<div class="primary-widget-area">
-	<div id="subnav">
-		<span class="title"><?php the_title();?></span>
-	</div>
-<?php dynamic_sidebar($post_name . '-left-rail'); ?>
-</div>
-
+	<?php dynamic_sidebar($post_name . '-left-rail'); ?>
 <?php endif; ?>
+
+</div>

@@ -2,11 +2,7 @@
 
 			<div id="content">
 
-			<?php if (is_active_sidebar($post->post_name . '-left-rail')) : ?>
-				<div id="<?php echo $post->post_name; ?>-sidebar">
-					<?php dynamic_sidebar($post->post_name . '-left-rail'); ?>
-				</div>
-			<?php endif; ?>
+			<?php get_sidebar(); ?>
 						
 				<div class="content">
 				

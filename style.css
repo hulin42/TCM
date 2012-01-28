@@ -180,7 +180,7 @@ a img {
 	background-color: #ca0813;
 }
 
-#header #menu .active a{
+#header #menu .current_page_item a{
 	color: white;
 	background-color: #ca0813;	
 }
