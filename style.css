@@ -180,7 +180,7 @@ a img {
 	background-color: #ca0813;
 }
 
-#header #menu .current_page_item a{
+#header #menu .current_page_item a, #header #menu .current-page-ancestor a{
 	color: white;
 	background-color: #ca0813;	
 }
@@ -294,19 +294,19 @@ a img {
 	content: "\03E \020";
 }
 
-#content #primary-widget-area #subnav ul li.active:before {
+#content #primary-widget-area #subnav ul li.current_page_item:before {
 	color: #cc0000;
 }
 
-#content #primary-widget-area #subnav li.active a{
+#content #primary-widget-area #subnav li.current_page_item a{
 	color: #cc0000;
 }
 
-.dw #content #primary-widget-area #subnav ul li.active:before {
+.dw #content #primary-widget-area #subnav ul li.current_page_item:before {
 	color: #1460a5;
 }
 
-.dw #content #primary-widget-area #subnav li.active a{
+.dw #content #primary-widget-area #subnav li.current_page_iteme a{
 	color: #1460a5;
 }
 
