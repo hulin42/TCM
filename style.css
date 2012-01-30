@@ -92,10 +92,6 @@ a img {
 	border-left: none;
 	margin-left: 0;
 }
-/*#topNav ul li:nth-child(-n+4):after {
-	color: #ffffef;
-	content: "\07C";
-}*/
 
 #topNav ul li a {
 	color: #ffffef;
@@ -284,6 +280,10 @@ a img {
 	color: #1460a5;
 }
 
+#content #primary-widget-area #subnav li:first-child a{
+	font-weight: bold;
+}
+
 #content #primary-widget-area #subnav ul {
 	list-style-type: none;
 	margin-top: 3px;
@@ -294,11 +294,19 @@ a img {
 	content: "\03E \020";
 }
 
+#content #primary-widget-area #subnav li:first-child {
+	display: inline-block;
+	overflow: hidden;
+	text-indent: -9px;
+	position: relative;
+	left: 9px;
+}
+
 #content #primary-widget-area #subnav ul li.current_page_item:before {
 	color: #cc0000;
 }
 
-#content #primary-widget-area #subnav li.current_page_item a{
+#content #primary-widget-area #subnav ul li.current_page_item a{
 	color: #cc0000;
 }
 
@@ -306,7 +314,7 @@ a img {
 	color: #1460a5;
 }
 
-.dw #content #primary-widget-area #subnav li.current_page_iteme a{
+.dw #content #primary-widget-area #subnav ul li.current_page_iteme a{
 	color: #1460a5;
 }
 
