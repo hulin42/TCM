@@ -2,8 +2,27 @@
 
 			<div id="content">
 
-			<?php get_sidebar(); ?>
-						
+<!--			<?php get_sidebar(); ?>-->
+				
+				<?php
+					$page = $post;
+					$page_name = null;
+					while ($page) {
+						if (is_active_sidebar($page->post_name . '-left-rail')) {
+							$page_name = $page->post_name;
+							$page = null;
+						}
+						else {
+							$page = get_post($page->post_parent);
+						}
+					}
+				?>
+				<?php if ($page_name) : ?>
+					<?php dynamic_sidebar($page_name . '-left-rail'); ?>
+				<?php else : ?>
+					<?php get_sidebar(); ?>
+				<?php endif; ?>
+										
 				<div class="content">
 				
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

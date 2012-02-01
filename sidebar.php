@@ -1,7 +1,7 @@
 <div id="primary-widget-area">
 
 	<div id="subnav">
-	
+
 	<?php
 	$has_subpages = false;
 	// Check to see if the current page has any subpages
