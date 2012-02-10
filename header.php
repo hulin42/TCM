@@ -34,10 +34,32 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
+	
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 
 	<?php wp_head(); ?>
+	
+<!--	<script type="text/javascript">
+	var $j = jQuery.noConflict();
+	    $j(document).ready(function(){
+	        var timer;
+	        $j('#menu-tcm-main-nav li').hover(
+	            function() {
+	                if(timer){
+	                    clearTimeout(timer);
+	                    timer = null;
+	                }
+	                $j(this).children('.sub-menu').fadeIn();
+	            },
+	            function() {
+	                timer = setTimeout(function(){
+	                    $j('.sub-menu').fadeOut();
+	                    }, 1000);
+	                }
+	           );
+	        });
+	</script>	-->
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -57,7 +79,9 @@
 				<?php wp_nav_menu(array('menu' => 'TCM Main Nav')); ?>
 			</div>			
 			<div id="breadcrumb">
-				<a href="#">Home</a> > <a href="#">What is TCM?</a>
+				<?php if(function_exists('bcn_display')){ bcn_display(); } ?>			
+<!--				<?php if(function_exists('rdfa_breadcrumb')){ rdfa_breadcrumb(); } ?>		-->
+<!--				<a href="#">Home</a> &gt; <a href="#">What is TCM?</a>-->
 			</div>
 			<div id="pageTools">
 				<a href="#">Email Page</a> | <a href="#">Print Version</a>

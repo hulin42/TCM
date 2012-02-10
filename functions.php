@@ -3,10 +3,13 @@
 	// Add RSS links to <head> section
 	automatic_feed_links();
 	
+	// Include Custom Post Types
+	include_once(ABSPATH . 'wp-content/themes/TCM/posttypes.php');
+		
 	// Load jQuery
 	if ( !is_admin() ) {
 	   wp_deregister_script('jquery');
-	   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"), false);
+	   wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"), false);
 	   wp_enqueue_script('jquery');
 	}
 	
@@ -65,16 +68,6 @@
 					'before_title' => '<h3>',
 					'after_title' => '</h3>',
 				));
-				// ... add a widget area for the page's footer
-//				register_sidebar(array(
-//					'id' => $page->post_name . '-footer',
-//					'name' => $page->post_title . ' - Footer',
-//					'description' => 'The footer for ' . $page->post_title,
-//					'before_widget' => '<div id="%1$s" class="widget %2$s">',
-//					'after_widget' => '</div>',
-//					'before_title' => '<h3>',
-//					'after_title' => '</h3>',
-//				));
 		}
 	}
 	endif;

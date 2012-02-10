@@ -1,3 +1,5 @@
+/* @override http://tcmdev.com/wp-content/themes/TCM/style.css */
+
 /* @override http://tcm.local/wp-content/themes/TCM/style.css */
 
 /*   
@@ -9,7 +11,7 @@ Author URI: http://woodenteeth.com
 Version: 1
 */
 
-@media screen {
+/*@media screen {*/
 
 html, body, p, h1, h2, h3, h4, h5, h6 { 
 	margin: 0; 
@@ -125,6 +127,7 @@ a img {
 	-moz-box-shadow: 5px 0px 5px rgba(0,0,0,0.3);
 	-webkit-box-shadow: 5px 0px 5px rgba(0,0,0,0.3);
 	box-shadow: 5px 0px 5px rgba(0,0,0,0.3);
+	overflow: visible;
 }
 
 #header #siteLogo {
@@ -145,40 +148,84 @@ a img {
 	margin-bottom: 7px;
 }
 
+#header #menu .menu-tcm-main-nav-container {
+}
+
 #header #menu ul {
 	margin: 0 0 0 -2px;
 	padding: 0;
 	display: table;
 	border-spacing: 2px 0px;
-	/*white-space: nowrap;*/
-	width: 866px;
-}
-#header #menu li {
-	list-style-type: none;
-	background-color: #fdf4c5;
-	border: 1px solid black;
-	height: 27px;
-	display: table-cell;
-	overflow: hidden;
+	overflow: visible;
+	float: left;
+	width: 100%;
 }
 
-#header #menu li a {
+#header #menu ul li {
+	list-style-type: none;
+	height: 27px;
+	display: table-cell;
+	overflow: visible;
+	position: relative;
+}
+
+#header #menu ul li a {
+	background-color: #fdf4c5;
+	border: 1px solid black;
 	text-decoration: none;
 	color: black;
 	text-align: center;
 	padding: 6px 4px 7px 2px;
-	width: 100%;
 	display: table;
+	width: 100%;
 }
 
-#header #menu li a:hover {
+#header #menu ul li a:hover, #header #menu ul ul li a:hover {
 	color: white;
 	background-color: #ca0813;
+}
+
+#header #menu ul li:hover ul {
+	display: block;
+}
+
+#header #menu ul ul {
+ 	background-color: #fffff7;
+	display: none;
+	border: 1px solid black;
+	position: absolute;
+	width: inherit;
+	overflow: hidden;
+}
+
+#header #menu ul ul li {
+	display:block;
+}
+
+#header #menu ul ul li a {
+ 	background-color: #fffff7;
+	border: none;	
+    height:16px;
+    line-height:16px;
+	color: black;
+	left: 2px;
+	text-align: left;
+	padding-left: 7px;
+	overflow: visible;
+	display: inline-block;
+	float: left;
+	white-space: nowrap;
+	width: 100%;
 }
 
 #header #menu .current_page_item a, #header #menu .current-page-ancestor a{
 	color: white;
 	background-color: #ca0813;	
+}
+
+#header #menu .current_page_item ul li a, #header #menu .current-page-ancestor ul li a{
+	color: black;
+ 	background-color: #fffff7;
 }
 
 .dw #header #menu li a:hover {
@@ -190,6 +237,7 @@ a img {
 	color: white;
 	background-color: #1961a9;	
 }
+
 
 #header #search #searchsubmit {
 	background-color: #fefbbd;
@@ -203,12 +251,13 @@ a img {
 	float: left;
 	padding-bottom: 3px;
 	margin-left: 12px;
+	text-transform: uppercase;
+	font-size: 10px;
 }
 
 #header #breadcrumb a {
 	color: #7f7e7e;
 	text-decoration: none;
-	text-transform: uppercase;
 	font-size: 10px;
 }
 
@@ -238,6 +287,7 @@ a img {
 	width: 100%;
 	border-top-style: hidden;
 }
+
 /* -------------- CONTENT -------------- */
 #content {
 	width: 862px;
@@ -280,6 +330,18 @@ a img {
 	color: #1460a5;
 }
 
+#content #primary-widget-area #subnav li {
+
+}
+
+#content #primary-widget-area #subnav li:first-child {
+	display: inline-block;
+	text-indent: -9px;
+	left: 9px;
+	overflow: hidden;
+	margin-left: 9px;
+}
+
 #content #primary-widget-area #subnav li:first-child a{
 	font-weight: bold;
 }
@@ -292,14 +354,6 @@ a img {
 #content #primary-widget-area #subnav ul li:before {
 	color: black;
 	content: "\03E \020";
-}
-
-#content #primary-widget-area #subnav li:first-child {
-	display: inline-block;
-	overflow: hidden;
-	text-indent: -9px;
-	position: relative;
-	left: 9px;
 }
 
 #content #primary-widget-area #subnav ul li.current_page_item:before {
@@ -454,7 +508,7 @@ a img {
 	color: #1460a5;
 }
 
-} /* END screen media */
+ /* END screen media */
 
 /*@media print {
 
