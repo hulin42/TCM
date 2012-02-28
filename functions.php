@@ -13,7 +13,7 @@
 	automatic_feed_links();
 
 	// Include Custom Post Types
-	require_once ('posttypes.php');
+	// require_once ('posttypes.php');
 
 	// Load jQuery
 	if ( !is_admin() ) {

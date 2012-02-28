@@ -7,8 +7,6 @@
 
 			<div id="content">
 
-<!--			<?php get_sidebar(); ?>-->
-
 				<div id="primary-widget-area">
 
 					<div id="subnav">
