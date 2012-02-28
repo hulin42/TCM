@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>" />
-	
+
 	<?php if (is_search()) { ?>
-	   <meta name="robots" content="noindex, nofollow" /> 
+	   <meta name="robots" content="noindex, nofollow" />
 	<?php } ?>
 
 	<title>
@@ -28,17 +28,17 @@
 		         echo ' - page '. $paged; }
 		   ?>
 	</title>
-	
+
 	<link rel="shortcut icon" href="/favicon.ico">
-	
+
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	
+
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-	
+
 	<?php if ( is_singular() ) wp_enqueue_script('comment-reply'); ?>
 
 	<?php wp_head(); ?>
-	
+
 <!--	<script type="text/javascript">
 	var $j = jQuery.noConflict();
 	    $j(document).ready(function(){
@@ -63,10 +63,16 @@
 </head>
 
 <body <?php body_class(); ?>>
-	
+
 	<div id="wrapper">
 		<div id="topNav">
 			<?php wp_nav_menu(array('menu' => 'TCM Top Nav')); ?>
+			
+			<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+				<a class="addthis_button_email"></a>
+			</div>
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f4a72c065c6de87"></script>
+
 			<div id="social-facebook"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/social_facebook.png" alt="social_facebook" width="31" height="31" /></a></div>
 			<div id="social-youtube"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/social_youTube.png" alt="social_youTube" width="31" height="31" /></a></div>
 		</div>
@@ -74,17 +80,17 @@
 			<div id="siteLogo"><a href="<?php echo get_option('home'); ?>/"><img src="<?php bloginfo('template_directory'); ?>/images/tcm_logo.png" alt="tcm_logo" width="293" height="92" /></a></div>
 			<div id="search">
 		    	<?php get_search_form(); ?>
-			</div>	
+			</div>
 			<div id="menu">
 				<?php wp_nav_menu(array('menu' => 'TCM Main Nav')); ?>
-			</div>			
+			</div>
 			<div id="breadcrumb">
-				<?php if(function_exists('bcn_display')){ bcn_display(); } ?>			
+				<?php if(function_exists('bcn_display')){ bcn_display(); } ?>
 <!--				<?php if(function_exists('rdfa_breadcrumb')){ rdfa_breadcrumb(); } ?>		-->
 <!--				<a href="#">Home</a> &gt; <a href="#">What is TCM?</a>-->
 			</div>
 			<div id="pageTools">
 				<a href="#">Email Page</a> | <a href="#">Print Version</a>
 			</div>
-			<hr>					
+			<hr>
 		</div>
