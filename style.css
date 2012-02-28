@@ -141,7 +141,6 @@ a img {
 }
 
 #header #menu {
-	width: 862px;
 	height: 30px;
 	/*padding-top: 7px;*/
 	display: inline-block;
@@ -149,6 +148,8 @@ a img {
 }
 
 #header #menu .menu-tcm-main-nav-container {
+	position: relative;
+	float: left;
 }
 
 #header #menu ul {
@@ -158,7 +159,8 @@ a img {
 	border-spacing: 2px 0px;
 	overflow: visible;
 	float: left;
-	width: 100%;
+	width: 862px;
+	position: relative;
 }
 
 #header #menu ul li {
@@ -175,9 +177,10 @@ a img {
 	text-decoration: none;
 	color: black;
 	text-align: center;
-	padding: 6px 4px 7px 2px;
+	padding: 6px 4px 7px;
 	display: table;
-	width: 100%;
+	width: auto;
+	white-space: nowrap;
 }
 
 #header #menu ul li a:hover, #header #menu ul ul li a:hover {
@@ -189,33 +192,45 @@ a img {
 	display: block;
 }
 
-#header #menu ul ul {
+#header #menu ul li ul {
  	background-color: #fffff7;
 	display: none;
 	border: 1px solid black;
 	position: absolute;
 	width: inherit;
-	overflow: hidden;
+	padding: 9px 11px;
+	margin-left: 0;
+	margin-top: 0;
+	top: 29px;
 }
 
-#header #menu ul ul li {
+#header #menu ul li ul li {
 	display:block;
+	height: auto;
 }
 
-#header #menu ul ul li a {
+#header #menu ul li ul li a {
  	background-color: #fffff7;
 	border: none;	
     height:16px;
-    line-height:16px;
+    line-height: 16px;
 	color: black;
 	left: 2px;
 	text-align: left;
-	padding-left: 7px;
 	overflow: visible;
 	display: inline-block;
 	float: left;
 	white-space: nowrap;
-	width: 100%;
+	width: auto;
+	font-size: 11px;
+	margin: 0 0 1px;
+	padding: 0;
+}
+
+#header #menu ul li ul li a:hover {
+ 	background-color: #fffff7;
+	color: #ca0813;
+	text-decoration: underline;
 }
 
 #header #menu .current_page_item a, #header #menu .current-page-ancestor a{
