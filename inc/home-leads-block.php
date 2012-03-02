@@ -1,3 +1,4 @@
+<div id="slider">
 <?php $lead_handle = Tw_Lead_Post_Type::get_lead_posts(1, 'feature-main'); ?>
 <?php if (!empty($lead_handle) && $lead_handle->have_posts()) : while ($lead_handle->have_posts()) : $lead_handle->the_post(); ?>
 	<?php
@@ -21,7 +22,13 @@
 		</div>
 	</<?php echo $block_tag_end; ?>>
 <?php endwhile; endif; ?>
+</div>
 
+<div id="menu">
+	<?php wp_nav_menu(array('menu' => 'TCM Main Nav')); ?>
+</div>
+			
+<div id="homepageSubFeatures">
 <?php foreach (array('feature-left', 'feature-center', 'feature-right') as $dynamic_position) : ?>
 	<?php $lead_handle = Tw_Lead_Post_Type::get_lead_posts(1, $dynamic_position); ?>
 	<?php if (!empty($lead_handle) && $lead_handle->have_posts()) : while ($lead_handle->have_posts()) : $lead_handle->the_post(); ?>
@@ -47,3 +54,4 @@
 		</<?php echo $block_tag_end; ?>>
 	<?php endwhile; endif; ?>
 <?php endforeach; ?>
+</div>

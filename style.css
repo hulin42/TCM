@@ -134,123 +134,17 @@ a img {
 	float: left;	
 }
 
-#header #search {
-	float: right;
-	clear: right;
-	margin-top: 51px;
-}
-
-#header #menu {
+#menu {
 	height: 30px;
 	/*padding-top: 7px;*/
 	display: inline-block;
 	margin-bottom: 7px;
 }
 
-#header #menu .menu-tcm-main-nav-container {
-	position: relative;
-	float: left;
-}
-
-#header #menu ul {
-	margin: 0 0 0 -2px;
-	padding: 0;
-	display: table;
-	border-spacing: 2px 0px;
-	overflow: visible;
-	float: left;
-	width: 862px;
-	position: relative;
-}
-
-#header #menu ul li {
-	list-style-type: none;
-	height: 27px;
-	display: table-cell;
-	overflow: visible;
-	position: relative;
-}
-
-#header #menu ul li a {
-	background-color: #fdf4c5;
-	border: 1px solid black;
-	text-decoration: none;
-	color: black;
-	text-align: center;
-	padding: 6px 4px 7px;
-	display: table;
-	width: auto;
-	white-space: nowrap;
-}
-
-#header #menu ul li a:hover, #header #menu ul ul li a:hover {
-	color: white;
-	background-color: #ca0813;
-}
-
-#header #menu ul li:hover ul {
-	display: block;
-}
-
-#header #menu ul li ul {
- 	background-color: #fffff7;
-	display: none;
-	border: 1px solid black;
-	position: absolute;
-	width: inherit;
-	padding: 9px 11px;
-	margin-left: 0;
-	margin-top: 0;
-	top: 29px;
-}
-
-#header #menu ul li ul li {
-	display:block;
-	height: auto;
-}
-
-#header #menu ul li ul li a {
- 	background-color: #fffff7;
-	border: none;	
-    height:16px;
-    line-height: 16px;
-	color: black;
-	left: 2px;
-	text-align: left;
-	overflow: visible;
-	display: inline-block;
-	float: left;
-	white-space: nowrap;
-	width: auto;
-	font-size: 11px;
-	margin: 0 0 1px;
-	padding: 0;
-}
-
-#header #menu ul li ul li a:hover {
- 	background-color: #fffff7;
-	color: #ca0813;
-	text-decoration: underline;
-}
-
-#header #menu .current_page_item a, #header #menu .current-page-ancestor a{
-	color: white;
-	background-color: #ca0813;	
-}
-
-#header #menu .current_page_item ul li a, #header #menu .current-page-ancestor ul li a{
-	color: black;
- 	background-color: #fffff7;
-}
-
-.dw #header #menu li a:hover {
-	color: white;
-	background-color: #1961a9;
-}
-
-.dw #header #menu .active a{
-	color: white;
-	background-color: #1961a9;	
+#header #search {
+	float: right;
+	clear: right;
+	margin-top: 51px;
 }
 
 
@@ -303,6 +197,118 @@ a img {
 	border-top-style: hidden;
 }
 
+/* -------------- MENU -------------- */
+
+#menu .menu-tcm-main-nav-container {
+	position: relative;
+	float: left;
+}
+
+#menu ul {
+	margin: 0 0 0 -2px;
+	padding: 0;
+	display: table;
+	border-spacing: 2px 0px;
+	overflow: visible;
+	float: left;
+	width: 862px;
+	position: relative;
+}
+
+#menu ul li {
+	list-style-type: none;
+	height: 27px;
+	display: table-cell;
+	overflow: visible;
+	position: relative;
+}
+
+#menu ul li a {
+	background-color: #fdf4c5;
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	padding: 6px 4px 7px;
+	display: table;
+	width: auto;
+	white-space: nowrap;
+}
+
+#menu ul li a:hover, #header #menu ul ul li a:hover {
+	color: white;
+	background-color: #ca0813;
+}
+
+#menu ul li:hover ul {
+	display: block;
+}
+
+#menu ul li ul {
+ 	background-color: #fffff7;
+	display: none;
+	border: 1px solid black;
+	position: absolute;
+	width: inherit;
+	padding: 9px 11px;
+	margin-left: 0;
+	margin-top: 0;
+	top: 29px;
+}
+
+#menu ul li ul li {
+	display:block;
+	height: auto;
+}
+
+#menu ul li ul li a {
+ 	background-color: #fffff7;
+	border: none;	
+    height:16px;
+    line-height: 16px;
+	color: black;
+	left: 2px;
+	text-align: left;
+	overflow: visible;
+	display: inline-block;
+	float: left;
+	white-space: nowrap;
+	width: auto;
+	font-size: 11px;
+	margin: 0 0 1px;
+	padding: 0;
+}
+
+#menu ul li ul li a:hover {
+ 	background-color: #fffff7;
+	color: #ca0813;
+	text-decoration: underline;
+}
+
+#menu .current_page_item a, #header #menu .current-page-ancestor a{
+	color: white;
+	background-color: #ca0813;	
+}
+
+#menu .current_page_item ul li a, #header #menu .current-page-ancestor ul li a{
+	color: black;
+ 	background-color: #fffff7;
+}
+
+.home #content #menu a {
+	color: black;
+}
+
+.dw #header #menu li a:hover {
+	color: white;
+	background-color: #1961a9;
+}
+
+.dw #header #menu .active a{
+	color: white;
+	background-color: #1961a9;	
+}
+
 /* -------------- CONTENT -------------- */
 #content {
 	width: 862px;
@@ -321,7 +327,7 @@ a img {
 	list-style-type: none;
 }
 
-#content ul li:before {
+#content #subnav ul li:before {
 	color: #7e0102;
 	content: "\03E \020";
 }
@@ -439,22 +445,23 @@ a img {
 
 /* -------------- PAGE: HOME -------------- */
 
-#home #content {
+.home #content {
 	padding-top: 0;
 }
-#home #content a {
+
+.home #content a {
 	color: #7e0102;
 }
 
-#home #content a:hover {
+.home #content a:hover {
 	color: black;
 }
 
-#home h1 {
+.home h1 {
 	font-size: 18px;
 }
 
-#home #header #slider {
+.home #slider {
 	position: relative;
 	width: 862px;
 	height: 326px;
@@ -462,18 +469,18 @@ a img {
 	margin-bottom: 7px;
 }
 
-#home #header #slider .sliderShadow {
+.home #slider .sliderShadow {
 	position: absolute;
 	right: 0;
 }
 
-#home #content #homepageSubFeatures {
+.home #homepageSubFeatures {
 	background: url(images/homepage_subFeature_bg.png) repeat-y;
-	width: 862px;
+	width: 877px;
 	display: inline-block;
 }
 
-#home #content .subFeature {
+.home .post {
 	width: 276px;
 	float: left;
 	padding-right: 8px;
@@ -481,29 +488,29 @@ a img {
 	padding-bottom: 10px;
 }
 
-#home #content .subFeature .image {
+.home .post .image {
 	position: relative;
 	display: block;
 	width: 276px;
 	height: 172px;
 }
 
-#home #content .subFeature .image .featureShadow {
+.home .post .image .featureShadow {
 	position: absolute;
 	right: 0;
 }
 
-#home #content .lastSubFeature {
+.home .lastSubFeature {
 	padding-right: 0px;
 	border-right: 0px;	
 }
 
-#home #content .subFeature:first-child {
+.home .post:first-child {
 	padding-left: 0px;
 	width: 278px;
 }
 
-#home #content .subFeature h1,#home #content .subFeature p {
+.home .post h1,#home #content .subFeature p {
 	padding-right: 8px;
 	padding-left: 8px;
 }
@@ -523,7 +530,7 @@ a img {
 	color: #1460a5;
 }
 
- /* END screen media */
+/* END screen media */
 
 /*@media print {
 
